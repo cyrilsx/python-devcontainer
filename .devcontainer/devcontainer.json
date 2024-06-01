@@ -1,0 +1,9 @@
+{
+  name: "python-dev",
+  dockerComposeFile: "docker-compose.yml",
+  workspaceFolder: "/workspace",
+
+  postCreateCommand: "python --version",
+  // Use 'forwardPorts' to make a list of ports inside the container available locally.
+  forwardPorts: [5432],
+}
